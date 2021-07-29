@@ -3,6 +3,6 @@ using namespace std;
 int main()
 {
     int a = 5;
-    int &p = a;
-    cout << a << endl << p << endl;
+    int &r = a;
+    cout << a << endl << r << endl;
 }
