@@ -4,13 +4,14 @@ struct Rectangle{
     int length;
     int breadth;
 };
-void fun(struct Rectangle rect){
-    cout << rect.length << endl << rect.breadth << endl;
+void fun(struct Rectangle *prect){
+    prect->length = 15;
+    cout << prect->length << endl << prect->breadth << endl;
 }
 int main()
 {
     struct Rectangle r = {10, 5};
-    fun(r);
+    fun(&r);
     cout << r.length << endl << r.breadth << endl;
 
 }
